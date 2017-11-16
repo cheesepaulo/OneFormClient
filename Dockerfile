@@ -1,4 +1,4 @@
-FROM node:6
+FROM node:6-slim
 ENV INSTALL_PATH /oneform-client
 RUN npm install -g @angular/cli
 RUN mkdir -p $INSTALL_PATH
