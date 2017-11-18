@@ -12,6 +12,9 @@ import { FormsModule } from './forms/forms.module';
 import { AnswersModule } from './answers/answers.module';
 import { RouterModule } from '@angular/router';
 import { routing } from './app.routing';
+import { UsersModule } from './users/users.module';
+import { Angular2TokenService } from 'angular2-token';
+
 
 @NgModule({
   declarations: [
@@ -27,10 +30,10 @@ import { routing } from './app.routing';
     ChartsModule,
     FormsModule,
     AnswersModule,
-    RouterModule,
+    UsersModule,
     routing
   ],
-  providers: [],
+  providers: [Angular2TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
